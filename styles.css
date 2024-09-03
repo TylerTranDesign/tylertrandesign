@@ -1,0 +1,587 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* FONTS -----------------------------------------------------------------------------*/
+
+h1{
+    color: #111111;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2{
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h3{
+    color: #111111;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h4{
+    color: #111111;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h5{
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* NAVIGATION -----------------------------------------------------------------------------*/
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px #616161;
+    z-index: 999;
+}
+
+#navbar-container{
+    width: 1100px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    color: #111111;
+    /*color: #f8f8f8;*/
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    color: #008AFC;
+}
+
+#hamburger-menu{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+.line{
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 20px;
+    /*background: #fff;*/
+    background: #111111;
+}
+.line:nth-child(1) { top: 5px; }
+.line:nth-child(2) { top: 18px; }
+.line:nth-child(3) { top: 31px; }
+
+#navbar-links{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    gap: 20px;
+}
+
+#inactive-page{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    /*background: #111111;*/
+    color: #111111;
+    transition: all 0.3s ease;
+}
+
+#inactive-page:hover{
+    color: #008AFC;
+}
+
+#active-page{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #008AFC;
+    transition: all 0.3s ease;
+}
+
+#active-page:hover{
+    color: #111111;
+}
+
+/* ABOUT SECTION -----------------------------------------------------------------------------*/
+
+.content-container{
+    /*background-color: aquamarine;*/
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#about-me{
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+
+.one-third-image{
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 66%;
+    margin: 0 auto;
+}
+
+.one-third{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.thirds{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: top;
+}
+
+.key-takeaway{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.two-column{
+    /*background-color: rgb(11, 129, 90);*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about-section{
+    align-content: center;
+    padding: 20px;
+}
+
+#about-heading{
+    padding-bottom: 20px;
+}
+
+#about-description{
+    padding-bottom: 30px;
+}
+
+.image-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.tyler-image{
+    border-radius: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+#tyler-image:hover{
+    background-color: #111111;
+}
+
+#projects-heading{
+    height: 40px;
+}
+
+#coming-soon{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* CASE STUDIES -----------------------------------------------------------------------------*/
+
+.projects{
+    max-width: 1060px;
+}
+
+.key-learnings ol{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.key-learnings li{
+    color: #111111;
+    font-size: 18px;
+
+}
+
+#project{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-details{
+    align-content: center;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.project-details-end{
+    align-content: center;
+    padding-right: 20px;
+}
+
+#project-title{
+    padding-bottom: 15px;
+}
+
+#project-description{
+    padding-bottom: 10px;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.tags ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 5px;
+}
+
+.tags li{
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid #111111;
+    color: #111111;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #111111;
+    border-radius: 20px;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 0.7;
+}
+
+.container:hover .text {
+    opacity: 1;
+}
+
+.button{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #008AFC;
+    transition: all 0.3s ease;
+}
+
+.button-coming-soon{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #6e6e6e;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background-color: #004f8f;
+}
+
+/* PREVIOUS WORK ----------------------------------------------------------------------*/
+
+.previous-companies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+}
+
+#previous-experience{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.company-image{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.company-title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER -----------------------------------------------------------------------------*/
+
+#footer{
+    background-color: #f8f8f8;
+}
+
+#copyright{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#line-break{
+    height: 3px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #D9D9D9;
+}
+
+/* CASE STUDIES -----------------------------------------------------------------------------*/
+
+.case-study-headline{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+}
+
+.case-study-heading{
+    padding-bottom: 20px;
+}
+
+.case-study-info-heading{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.case-study-info{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.case-study-hook{
+    padding-right: 20px;
+}
+
+.case-study-specs{
+    padding-top: 0px;
+}
+
+/* HUMBER EVENTS -----------------------------------------------------------------------------*/
+
+#next-project{
+    padding-top: 120px;
+    padding-bottom: 40px;;
+}
+
+#next-project-top{
+    padding-top: 20px;
+    padding-bottom: 40px;;
+}
+
+.next-project-bar{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.next-project-bar li a{
+    font-size: 20px;
+    color: #004f8f;
+}
+
+/* LINKS -----------------------------------------------------------------------------*/
+
+#contact-link{
+    color: #004f8f;
+}
+
+#inactive-link{
+    color: #6e6e6e;
+}
+
+/* RESPONSIVE -----------------------------------------------------------------------------*/
+
+@media (max-width: 900px){
+    #navbar-links{
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        align-content: center;
+        align-items: left;
+        background:#f8f8f8;
+        flex-direction: column;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #navbar-links.active{
+        display: flex;
+    }
+
+    #about-section{
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #hamburger-menu{
+        display: flex;
+    }
+
+    .two-column{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .one-third-image{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+
+    }
+
+    .tyler-image{
+        display: block;
+        border-radius: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #about-section{
+        height: fit-content;
+    }
+
+    .case-study-headline{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-specs{
+        padding-top: 30px;
+    }
+
+    .previous-companies{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .thirds{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .company-image{
+        margin: 0 auto;
+        width: 70%;
+        border-radius: 20px;
+    }
+}
