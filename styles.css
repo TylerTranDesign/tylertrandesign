@@ -23,6 +23,16 @@ body {
     background-color: #ffffff;
 }
 
+footer {
+    font-family: 'Work Sans', sans-serif;
+
+    max-width: var(--content-max-with);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
 html{
     scroll-behavior: smooth; 
 }
@@ -114,6 +124,7 @@ html{
 
 #inactive-page:hover{
     color: #006DC7;
+    font-weight: 600;
 }
 
 #active-page{
@@ -126,6 +137,7 @@ html{
 
 #active-page:hover{
     color: #111111;
+    font-weight: 800;
 }
 
 /* ----------------------Footer---------------------- */
@@ -138,7 +150,6 @@ html{
 .footer-info{
     font-size: 18px;
     font-weight: 400;
-    width: 540px;
     line-height: 34px;
     color: #000000;
     text-align: center;
@@ -157,7 +168,7 @@ html{
 .about{
     font-size: 24px;
     font-weight: 400;
-    width: 540px;
+    width: 50%;
     line-height: 34px;
     color: #000000;
     text-align: center;
@@ -227,6 +238,15 @@ html{
 
 /* ----------------------Divider---------------------- */
 .divider-heading{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divider-heading-middle{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -335,25 +355,35 @@ html{
 
 #project-intro{
     padding-top: calc(var(--header-height) + 60px);
+    width: 80%;
     display: grid;
-    grid-template-columns: 1fr 40%;
-    gap: 30px;
+    grid-template-columns: 1fr 30%;
+    margin: 0 auto;
+    gap: 60px;
 }
 
 #project-bio-title{
     font-size: 40px;
     font-weight: 600;
+    padding-bottom: 30px;
 }
 
 #project-bio{
     font-size: 16px;
     font-weight: 400;
+    line-height: 25px;
 }
 
 #project-skills{
-    padding-top: 16px;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+
+#list-item{
+    text-decoration: none;
+    list-style: none;
 }
 
 .project-main-image{
@@ -362,8 +392,73 @@ html{
 
 .project-main-image img{
     display: block;
-    width: 75%;
+    width: 100%;
     margin: auto;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+
+.project-section{
+    margin-top: 60px;;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#project-section-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#project-section-text{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 26px;
+}
+
+#project-section-image{
+    width: 100%;
+}
+
+.project-text{
+    width: 80%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.project-text:hover{
+    scale: 105%;
+}
+
+#project-text-heading{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#project-text-body{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-top: 14px;
+}
+
+.project-image{
+    width: 80%;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.project-image:hover{
+    scale: 103%;
 }
 
 /* ----------------------Responsive---------------------- */
@@ -451,14 +546,11 @@ html{
     #hamburger-menu:hover div{
         background: #006DC7;
     }
-}
-
-@media (max-width: 700px){
 
     .about{
         font-size: 24px;
         font-weight: 400;
-        width: 350px;
+        width: 75%;
         color: #000000;
         text-align: center;
         margin: 0 auto;
@@ -473,6 +565,30 @@ html{
     .project-card{
         width: 100%
     }
+
+    .project-text{
+        width: 100%;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 0px;
+        margin-bottom: 30px;
+    }
+
+    .project-image{
+        width: 100%;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px){
+
+
 }
 
 
